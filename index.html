@@ -2,8 +2,29 @@
 <html lang="en">
 <head>
     <style>
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: auto;
+            margin: 300px 300px 300px 300px;
+        }
+
         img {
             width: 100px;
+            float: left;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            padding: 20px;
         }
     </style>
 
@@ -23,6 +44,7 @@
         </ul>
     </div>
 
+    
     <div id="introduction"> 
         <h2>Introduction</h2>
         <p> 
@@ -32,36 +54,37 @@
         </p>
     </div>
 
-    <div id="IE">
-        <h2>A brief history of IE</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Internet_Explorer_10%2B11_logo.svg">
-        <p>
-            The first Internet Explorer was derived from Spyglass Mosaic. The original <a href="https://en.wikipedia.org/wiki/NCSA_Mosaic">Mosaic</a> came from NCSA, but since NCSA was a public entity it relied on Spyglass as its commercial licensing partner. Spyglass in turn delivered two versions of the Mosaic browser to Microsoft, one wholly based on the NCSA source code, and another engineered from scratch but conceptually modeled on the NCSA browser. Internet Explorer was initially built using the Spyglass, not the NCSA source code. The license to Microsoft provided Spyglass (and thus NCSA) with a quarterly fee plus a percentage of Microsoft's revenues for the software.
+    <div class="row">
+        <div id="IE" class="column">
+            <h2>A brief history of IE</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Internet_Explorer_10%2B11_logo.svg">
+            <p>
+                The first Internet Explorer was derived from Spyglass Mosaic. The original <a href="https://en.wikipedia.org/wiki/NCSA_Mosaic">Mosaic</a> came from NCSA, but since NCSA was a public entity it relied on Spyglass as its commercial licensing partner. Spyglass in turn delivered two versions of the Mosaic browser to Microsoft, one wholly based on the NCSA source code, and another engineered from scratch but conceptually modeled on the NCSA browser. Internet Explorer was initially built using the Spyglass, not the NCSA source code. The license to Microsoft provided Spyglass (and thus NCSA) with a quarterly fee plus a percentage of Microsoft's revenues for the software.
 
-            In March 2009 Version 8.0 was released, with the first public beta having been released on March 5, 2008. IE8 offered better support for web standards than previous versions, with plans for improved support for RSS, CSS, and Ajax, as well as full compliance for Cascading Style Sheets 2.1. It was also the first version to successfully pass the Acid2 test. In addition, Internet Explorer 8 included new features such as WebSlices and an improved phishing filter.
-        </p>
+                In March 2009 Version 8.0 was released, with the first public beta having been released on March 5, 2008. IE8 offered better support for web standards than previous versions, with plans for improved support for RSS, CSS, and Ajax, as well as full compliance for Cascading Style Sheets 2.1. It was also the first version to successfully pass the Acid2 test. In addition, Internet Explorer 8 included new features such as WebSlices and an improved phishing filter.
+            </p>
+        </div>
+
+        <div id="Firefox" class="column"> 
+            <h2>A brief history of FireFox</h2>
+            <img src="http://upload.wikimedia.org/wikipedia/commons/f/ff/Mozilla_Firefox_logo_2013.png">
+            <p>
+                The project which became Firefox started as an experimental branch of the <a href="https://en.wikipedia.org/wiki/Mozilla_Application_Suite">Mozilla Suite</a> called m/b (or mozilla/browser). After it had been sufficiently developed, binaries for public testing appeared in September 2002 under the name Phoenix.
+
+                Firefox 23 was released on August 6, 2013. It includes an updated Firefox logo, mixed content blocking enabled by default to defend against man-in-the-middle attacks, implementation of the range form control attribute in HTML5, dropping support for the blink HTML element as well as text-decoration:blink CSS element, the restriction to have to "switch to a different search provider across the entire browser," and a global browser console, a new network monitor among other things. 
+            </p>
+        </div>
+
+        <div id="Chrome" class="column"> 
+            <h2>A brief history of Chrome</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg">
+            <p>
+                Google's <a href="https://en.wikipedia.org/wiki/Eric_Schmidt">Eric Schmidt</a> opposed the development of an independent web browser for six years. He stated that "at the time, Google was a small company," and he did not want to go through "bruising browser wars." After co-founders Sergey Brin and Larry Page hired several Mozilla Firefox developers and built a demonstration of Chrome, however, Schmidt admitted that "It was so good that it essentially forced me to change my mind."
+
+                In December 2010 Google announced that to make it easier for businesses to use Chrome they would provide an official Chrome MSI package. For business use it is helpful to have full-fledged MSI packages that can be customized via transform files (.mst) - but the MSI provided with Chrome is only a very limited MSI wrapper fitted around the normal installer, and many businesses find that this arrangement does not meet their needs.
+            </p>
+        </div>
     </div>
-
-    <div id="Firefox"> 
-        <h2>A brief history of FireFox</h2>
-        <img src="http://upload.wikimedia.org/wikipedia/commons/f/ff/Mozilla_Firefox_logo_2013.png">
-        <p>
-            The project which became Firefox started as an experimental branch of the <a href="https://en.wikipedia.org/wiki/Mozilla_Application_Suite">Mozilla Suite</a> called m/b (or mozilla/browser). After it had been sufficiently developed, binaries for public testing appeared in September 2002 under the name Phoenix.
-
-            Firefox 23 was released on August 6, 2013. It includes an updated Firefox logo, mixed content blocking enabled by default to defend against man-in-the-middle attacks, implementation of the range form control attribute in HTML5, dropping support for the blink HTML element as well as text-decoration:blink CSS element, the restriction to have to "switch to a different search provider across the entire browser," and a global browser console, a new network monitor among other things. 
-        </p>
-    </div>
-
-    <div id="Chrome"> 
-        <h2>A brief history of Chrome</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg">
-        <p>
-            Google's <a href="https://en.wikipedia.org/wiki/Eric_Schmidt">Eric Schmidt</a> opposed the development of an independent web browser for six years. He stated that "at the time, Google was a small company," and he did not want to go through "bruising browser wars." After co-founders Sergey Brin and Larry Page hired several Mozilla Firefox developers and built a demonstration of Chrome, however, Schmidt admitted that "It was so good that it essentially forced me to change my mind."
-
-            In December 2010 Google announced that to make it easier for businesses to use Chrome they would provide an official Chrome MSI package. For business use it is helpful to have full-fledged MSI packages that can be customized via transform files (.mst) - but the MSI provided with Chrome is only a very limited MSI wrapper fitted around the normal installer, and many businesses find that this arrangement does not meet their needs.
-        </p>
-    </div>
-
 
 </body>
 </html>
