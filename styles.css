@@ -14,3 +14,31 @@ img {
     width: 100px;
     float: left;
 }
+
+.navbar {
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.left {
+    flex: 300px;
+    float: left;
+    margin: 1em;  
+}
+
+.right {
+    flex: 300px;
+    margin: 1em;
+    float: right;
+}
+
+.center {
+    flex: 300px;
+    margin: 1em;
+}
+
