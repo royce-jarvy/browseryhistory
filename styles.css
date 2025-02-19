@@ -9,10 +9,37 @@ body {
     background-color: ivory;
 }
 
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    padding: 75px;
+}
+
 img {
     width: 100px;
     float: left;
     margin-right: 8px;
 }
 
+.left {
+    float: left;
+    width: 300px;
+    padding: 1em;
+}
 
+.right {
+    float: right;
+    width: 300px;
+    padding: 1em;
+}
+
+.center {
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 1em;
+}
